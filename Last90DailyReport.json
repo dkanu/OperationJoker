@@ -1,0 +1,56 @@
+{
+            "kind": "doubleclickbidmanager#query",
+            "metadata": {
+                "dataRange": "LAST_90_DAYS",
+                "format": "CSV",
+                "title": "Last90DailyReport",
+                "running": "True",
+                "sendNotification": "True",
+                "shareEmailAddress": [
+                    "YOUR_EMAIL_ADDRESS"
+                ]
+            },
+            "params": {
+                "filters": [
+                    {
+                        "type": "FILTER_ADVERTISER",
+                        "value": "YOUR_ADVERTISER_ID"
+                    },
+                    {
+                        "type": "FILTER_PARTNER",
+                        "value": "YOUR_PARTNER_ID"
+                    }
+                ],
+                "groupBys": [
+                    "FILTER_DATE",
+                    "FILTER_ADVERTISER",
+                    "FILTER_INSERTION_ORDER",
+                    "FILTER_LINE_ITEM",
+                    "FILTER_SITE_ID"
+                ],
+                "metrics": [
+                    "METRIC_IMPRESSIONS",
+                    "METRIC_ACTIVE_VIEW_VIEWABLE_IMPRESSIONS",
+                    "METRIC_CLICKS",
+                    "METRIC_CTR",
+                    "METRIC_REVENUE_ECPC_ADVERTISER",
+                    "METRIC_TOTAL_CONVERSIONS",
+                    "METRIC_LAST_CLICKS",
+                    "METRIC_LAST_IMPRESSIONS",
+                    "METRIC_REVENUE_ECPA_ADVERTISER",
+                    "METRIC_REVENUE_ADVERTISER",
+                    "METRIC_TRUEVIEW_VIEWS",
+                    "METRIC_RICH_MEDIA_VIDEO_FIRST_QUARTILE_COMPLETES",
+                    "METRIC_RICH_MEDIA_VIDEO_MIDPOINTS",
+                    "METRIC_RICH_MEDIA_VIDEO_THIRD_QUARTILE_COMPLETES",
+                    "METRIC_RICH_MEDIA_VIDEO_COMPLETIONS",
+                    "METRIC_RICH_MEDIA_VIDEO_SKIPS",
+                    "METRIC_VIDEO_COMPLETION_RATE"
+                ],
+                "type": "TYPE_GENERAL"
+            },
+            "queryId": "1232456",
+            "schedule": {
+                "frequency": "DAILY"
+            }
+        }
